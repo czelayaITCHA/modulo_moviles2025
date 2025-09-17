@@ -78,23 +78,6 @@ if (age >= 18) {
     // Añade aquí el código
 }
 ```
-
-<details>
-  <summary>Respuesta</summary>
-  
-   ```kotlin
-   val age = 20
-   if (age >= 18) {
-       println("Adult")
-   } else {
-       println("Minor")
-   }
-   ```
-   
-   **Explicación:**
-   - La función verifica si `age` es mayor o igual a 18. Si es verdadero, imprime "Adult"; de lo contrario, imprime "Minor".
-</details>
-
 ---
 
 #### Pregunta 3:
@@ -104,23 +87,6 @@ fun checkPass(score: Int) {
     // Añade aquí el código
 }
 ```
-
-<details>
-  <summary>Respuesta</summary>
-  
-   ```kotlin
-   fun checkPass(score: Int) {
-       if (score >= 60) {
-           println("Pass")
-       } else {
-           println("Fail")
-       }
-   }
-   ```
-   
-   **Explicación:**
-   - La función `checkPass` recibe un parámetro `score`. Dependiendo de si `score` es mayor o igual a 60, imprime "Pass" o "Fail".
-</details>
 
 ## 2. Cómo usar una sentencia when para varias ramas
 En Kotlin, la sentencia `when` es una estructura de control muy flexible que se utiliza para manejar múltiples condiciones.
@@ -218,16 +184,6 @@ when (x) {
 4. Desconocido
 
 
-<details>
-  <summary>Respuesta</summary>
-  
-   2. Dos
-   
-   **Explicación:**
-   -La variable `x` tiene el valor de 2. El bloque `when` evalúa `x` y encuentra el caso `2`, por lo que ejecuta `println("Dos")`. Si no hubiera coincidencia con los valores 1, 2 o 3, se habría ejecutado el bloque `else`.
-</details>
-
-
 ---
 
 #### Pregunta 2:
@@ -245,16 +201,6 @@ when (color) {
 2. El color es azul  
 3. El color es verde  
 4. Color desconocido
-
-<details>
-  <summary>Respuesta</summary>
-  
-   2. El color es azul
-   
-   **Explicación:**
-   - La variable `color` tiene el valor "azul". El bloque `when` evalúa los casos y encuentra una coincidencia con "azul", por lo que imprime "El color es azul". Si el valor de `color` hubiera sido diferente a "rojo", "azul" o "verde", se habría ejecutado el bloque `else`.
-
-</details>
 
 ---
 
