@@ -66,15 +66,6 @@ println(result)
 2. `Odd`
 3. `Error`
 
-<details>
-  <summary>Respuesta</summary>
-  
-   2. `Odd`
-   
-   **Explicación:**
-   - La condición `number % 2 == 0` verifica si el número es divisible por 2. Dado que 7 no es divisible por 2, la condición es falsa y se ejecuta el bloque `else`, que asigna "Odd" a `result`.
-</details>
-
 ---
 
 #### Pregunta 2:
