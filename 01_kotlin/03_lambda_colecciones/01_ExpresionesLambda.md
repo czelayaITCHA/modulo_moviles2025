@@ -50,7 +50,7 @@ val sumaTres: (Int, Int, Int) -> Int = { a, b, c ->
 
 // Parámetros: 1 valor de Int
 // Tipo de retorno: String
-val decierEdad: (Int) -> String = { edad ->
+val mostrarEdad: (Int) -> String = { edad ->
     "Tengo $edad años."
 }
 ```
