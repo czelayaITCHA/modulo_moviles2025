@@ -102,19 +102,6 @@ fun suma(a: Int, b: Int): Int {
     return a + b
 }
 ```
-
-<details>
-  <summary>Respuesta</summary>
-  
-  **Lambda:**
-  ```kotlin
-  val suma: (Int, Int) -> Int = { a, b -> a + b }
-  ```
-  **Explicación:**
-  - El tipo de función `(Int, Int) -> Int` indica que la lambda toma dos parámetros de tipo `Int` y devuelve un `Int`.
-  - `{ a, b -> a + b }` es la sintaxis de la lambda donde `a` y `b` son los parámetros, y `a + b` es la operación.
-</details>
-
 #### Ejercicio 2:
 Escribe la siguiente función como una expresión lambda.
 
@@ -123,19 +110,6 @@ fun esPar(n: Int): Boolean {
     return n % 2 == 0
 }
 ```
-
-<details>
-  <summary>Respuesta</summary>
-  
-  **Lambda:**
-  ```kotlin
-  val esPar: (Int) -> Boolean = { n -> n % 2 == 0 }
-  ```
-  **Explicación:**
-  - `(Int) -> Boolean` indica que la lambda toma un `Int` y devuelve un `Boolean`.
-  - `{ n -> n % 2 == 0 }` es la lógica que verifica si el número es par.
-</details>
-
 #### Ejercicio 3:
 Escribe la siguiente función como una expresión lambda.
 
@@ -144,18 +118,6 @@ fun cuadrado(n: Int): Int {
     return n * n
 }
 ```
-
-<details>
-  <summary>Respuesta</summary>
-  
-  **Lambda:**
-  ```kotlin
-  val cuadrado: (Int) -> Int = { n -> n * n }
-  ```
-  **Explicación:**
-  - `(Int) -> Boolean` indica que la lambda toma un `Int` y devuelve un `Boolean`.
-  - `{ n -> n % 2 == 0 }` es la lógica que verifica si el número es par.
-</details>
 
 #### Ejercicio 4:
 Escribe la siguiente función como una expresión lambda.
@@ -166,19 +128,6 @@ fun saludo(nombre: String): String {
 }
 ```
 
-<details>
-  <summary>Respuesta</summary>
-  
-  **Lambda:**
-  ```kotlin
-  val saludo: (String) -> String = { nombre -> "Hola, $nombre" }
-  ```
-  **Explicación:**
-  - `(String) -> String` indica que toma un `String` como argumento y devuelve otro `String`.
-  - `{ nombre -> "Hola, $nombre" }` genera el saludo con el nombre dado.
-</details>
-
-
 #### Ejercicio 5:
 Escribe la siguiente función como una expresión lambda.
 
@@ -187,18 +136,6 @@ fun longitud(str: String): Int {
     return str.length
 }
 ```
-
-<details>
-  <summary>Respuesta</summary>
-  
-  **Lambda:**
-  ```kotlin
-  val longitud: (String) -> Int = { str -> str.length }
-  ```
-  **Explicación:**
-  - `(String) -> Int` indica que toma una cadena (`String`) y devuelve su longitud (`Int`).
-  - `{ str -> str.length }` es la operación que calcula la longitud de la cadena.
-</details>
 
 #### Ejercicio 6:
 Escribe la siguiente función como una expresión lambda.
@@ -209,18 +146,6 @@ fun maximo(a: Int, b: Int): Int {
 }
 ```
 
-<details>
-  <summary>Respuesta</summary>
-  
-  **Lambda:**
-  ```kotlin
-  val maximo: (Int, Int) -> Int = { a, b -> if (a > b) a else b }
-  ```
-  **Explicación:**
-  - `(Int, Int) -> Int` indica que la lambda toma dos enteros y devuelve el mayor de ellos.
-  - `{ a, b -> if (a > b) a else b }` contiene la lógica condicional para comparar los valores.
-</details>
-
 #### Ejercicio 7:
 Escribe la siguiente función como una expresión lambda.
 
@@ -229,18 +154,6 @@ fun saludoFormal(nombre: String, titulo: String): String {
     return "Hola, $titulo $nombre"
 }
 ```
-
-<details>
-  <summary>Respuesta</summary>
-  
-  **Lambda:**
-  ```kotlin
-  val saludoFormal: (String, String) -> String = { nombre, titulo -> "Hola, $titulo $nombre" }
-  ```
-  **Explicación:**
-  - `(String, String) -> String` indica que la lambda toma dos cadenas, `nombre` y `titulo`, y devuelve un saludo formal.
-  - `{ nombre, titulo -> "Hola, $titulo $nombre" }` genera el saludo con el título y el nombre.
-</details>
 
 #### Ejercicio 8:
 Escribe la siguiente función como una expresión lambda.
@@ -251,18 +164,6 @@ fun esMayorDeEdad(edad: Int): Boolean {
 }
 ```
 
-<details>
-  <summary>Respuesta</summary>
-  
-  **Lambda:**
-  ```kotlin
-  val esMayorDeEdad: (Int) -> Boolean = { edad -> edad >= 18 }
-  ```
-  **Explicación:**
-  - `(Int) -> Boolean` indica que la lambda toma un entero y devuelve `true` o `false`.
-  - `{ edad -> edad >= 18 }` verifica si la edad es mayor o igual a 18.
-</details>
-
 #### Ejercicio 9:
 Escribe la siguiente función como una expresión lambda.
 
@@ -272,18 +173,6 @@ fun multiplicar(a: Int, b: Int): Int {
 }
 ```
 
-<details>
-  <summary>Respuesta</summary>
-  
-  **Lambda:**
-  ```kotlin
-  val multiplicar: (Int, Int) -> Int = { a, b -> a * b }
-  ```
-  **Explicación:**
-  - `(Int, Int) -> Int` indica que la lambda toma dos enteros y devuelve su producto.
-  - `{ a, b -> a * b }` realiza la multiplicación entre `a` y `b`.
-</details>
-
 #### Ejercicio 10:
 Escribe la siguiente función como una expresión lambda.
 
@@ -292,18 +181,6 @@ fun esNegativo(n: Int): Boolean {
     return n < 0
 }
 ```
-
-<details>
-  <summary>Respuesta</summary>
-  
-  **Lambda:**
-  ```kotlin
-  val esNegativo: (Int) -> Boolean = { n -> n < 0 }
-  ```
-  **Explicación:**
-  - `(Int) -> Boolean` indica que la lambda toma un entero y devuelve `true` si es negativo.
-  - `{ n -> n < 0 }` es la lógica que verifica si el número es negativo.
-</details>
 
 ## 2. Funciones que aceptan lambdas como argumentos
 
