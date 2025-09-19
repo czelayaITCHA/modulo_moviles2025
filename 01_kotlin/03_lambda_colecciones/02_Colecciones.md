@@ -70,15 +70,6 @@ c) `val lista = setOf("manzana", "plátano", "naranja")`
 
 d) `val lista = mutableSetOf("manzana", "plátano", "naranja")`
 
-<details>
-  <summary>Respuesta</summary>
-  
-  b) `val lista = mutableListOf("manzana", "plátano", "naranja")`
-  
-  **Explicación:** <br>
-  La función `mutableListOf` crea una lista mutable que permite añadir, eliminar o modificar elementos. En cambio, `listOf` crea una lista inmutable que no se puede modificar después de su creación.
-</details>
-
 ### **2. ¿Cómo puedes verificar si un conjunto contiene un elemento específico en Kotlin?**
 a) `conjunto.has("elemento")`
 
@@ -87,15 +78,6 @@ b) `conjunto.contains("elemento")`
 c) `conjunto.includes("elemento")`
 
 d) `conjunto.in("elemento")`
-
-<details>
-  <summary>Respuesta</summary>
-  
-  b) `conjunto.contains("elemento")`
-  
-  **Explicación:** <br>
-  El método `contains` se utiliza para verificar si un conjunto contiene un elemento específico. No existe un método llamado `has` o `includes` en los conjuntos en Kotlin.
-</details>
 
 ### **3. ¿Cuál de las siguientes afirmaciones es correcta sobre los mapas en Kotlin?**
 a) Las claves en un mapa pueden estar duplicadas, pero los valores no.
@@ -106,16 +88,6 @@ c) Las claves y los valores en un mapa pueden estar duplicados.
 
 d) Los mapas no permiten duplicados ni en claves ni en valores.
 
-<details>
-  <summary>Respuesta</summary>
-  
-  b) Los valores en un mapa pueden estar duplicados, pero las claves no.
-  
-  **Explicación:** <br>
-  En un mapa, las claves deben ser únicas, pero los valores asociados con las claves pueden ser duplicados. Si se intenta agregar una clave duplicada, se sobrescribirá el valor existente con el nuevo valor.
-</details>
-
-
 ### **4. ¿Cuál es la sintaxis para añadir un nuevo par clave-valor a un mapa mutable en Kotlin?**
 a) `map.put(4, "nuevoValor")`
 
@@ -125,15 +97,6 @@ c) `map[4] = "nuevoValor"`
 
 d) `map.insert(4, "nuevoValor")`
 
-<details>
-  <summary>Respuesta</summary>
-  
-  c) `map[4] = "nuevoValor"`
-  
-  **Explicación:** <br>
-  Para añadir o actualizar un par clave-valor en un mapa mutable, se usa la sintaxis de corchetes (`map[clave] = valor`). Las funciones `put` también se pueden usar, pero la sintaxis de corchetes es más común.
-</details>
-
 ### **5. ¿Cómo puedes eliminar un elemento específico de una lista mutable en Kotlin?**
 a) `lista.remove("elemento")`
 
@@ -142,15 +105,6 @@ b) `lista.delete("elemento")`
 c) `lista.erase("elemento")`
 
 d) `lista.discard("elemento")`
-
-<details>
-  <summary>Respuesta</summary>
-  
-  a) `lista.remove("elemento")`
-  
-  **Explicación:** <br>
-  El método `remove` se utiliza para eliminar un elemento específico de una lista mutable. No existen métodos como `delete`, `erase`, o `discard` para las listas en Kotlin.
-</details>
 
 ### **6. Crea una lista inmutable con los siguientes elementos: "rojo", "verde", "azul". Luego, obtén el tamaño de la lista y el primer elemento.**
 
