@@ -24,8 +24,8 @@ fun ColumnExample() {
     Column(
         modifier = Modifier.padding(16.dp)
     ) {
-        Text(text = "Nombre: Carlos Zelaya")
-        Text(text = "Profesión: Ingeniero en Computación")
+        Text(text = "Nombre: Juan Pérez")
+        Text(text = "Profesión: Profesor")
     }
 }
 ```
@@ -43,8 +43,8 @@ fun ColumnExampleAlineado() {
         horizontalAlignment = Alignment.CenterHorizontally
 
     ) {
-        Text(text = "Nombre: Carlos Zelaya")
-        Text(text = "Profesión: Ingeniero en Computación")
+        Text(text = "Nombre: Juan Pérez")
+        Text(text = "Profesión: Profesor")
     }
 }
 ```
@@ -69,7 +69,7 @@ fun RowExample() {
         modifier = Modifier.padding(16.dp)
     ) {
         Text(text = "Nombre:")
-        Text(text = "Kyo Onuma")
+        Text(text = "Juan Pérez")
     }
 }
 ```
@@ -87,7 +87,7 @@ fun RowExampleAlineado() {
         verticalAlignment = Alignment.CenterVertically
     ) {
         Text(text = "Nombre:")
-        Text(text = "Kyo Onuma")
+        Text(text = "Juan Pérez")
     }
 }
 ```
@@ -141,7 +141,7 @@ Usa el componente `Text` para mostrar el nombre y la edad **de manera vertical**
    @Composable
    fun NombreYEdad() {
        Column {
-           Text(text = "Nombre: Kyo Onuma")
+           Text(text = "Nombre: Juan Pérez")
            Text(text = "Edad: 25 años")
        }
    }
@@ -197,7 +197,7 @@ Usa el componente `Text` para mostrar el nombre y la edad **de manera horizontal
    @Composable
    fun PerfilHorizontal() {
        Row {
-           Text(text = "Nombre: Kyo Onuma")
+           Text(text = "Nombre: Juan Pérez")
            Spacer(modifier = Modifier.width(8.dp))
            Text(text = "Edad: 35 años")
        }
