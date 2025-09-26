@@ -394,45 +394,6 @@ fun ToggleTextFieldEnabledExample() {
 <br>
 ![image](https://github.com/user-attachments/assets/fe25f9f1-77a9-421a-9e8a-f17f7c59a3e1)
 
-<details>
-  <summary>Ejemplo de solución</summary>
-
-   ```kotlin
-   @Composable
-   fun ClearMultipleTextFieldsExample() {
-       var text1 by remember { mutableStateOf("") }
-       var text2 by remember { mutableStateOf("") }
-
-       Column(
-           modifier = Modifier.padding(16.dp),
-           horizontalAlignment = Alignment.CenterHorizontally
-       ) {
-           OutlinedTextField(
-               value = text1,
-               onValueChange = { text1 = it },
-               label = { Text("Texto 1") }
-           )
-           Spacer(modifier = Modifier.height(16.dp))
-           OutlinedTextField(
-               value = text2,
-               onValueChange = { text2 = it },
-               label = { Text("Texto 2") }
-           )
-           Spacer(modifier = Modifier.height(16.dp))
-           OutlinedButton(onClick = {
-               text1 = ""
-               text2 = ""
-           }) {
-               Text("Borrar ambos")
-           }
-       }
-   }
-   ```
-
-   **Explicación**:  
-   - Dos `OutlinedTextField` están asociados con las variables `text1` y `text2`.
-   - En el `onClick` del botón, ambos campos se vacían al asignar `""` a `text1` y `text2`, limpiando ambos.
-</details>
 
 ### **Ejercicio 6: Múltiples campos**
 **Problema**: Crea dos `OutlinedTextField` donde el usuario pueda ingresar su apellido y edad. Al presionar el botón de "Enviar", debería mostrarse en la pantalla: "[Apellido] tiene [Edad] años".
@@ -441,45 +402,3 @@ fun ToggleTextFieldEnabledExample() {
 <br>
 ![image](https://github.com/user-attachments/assets/62c449f6-603e-42cf-b5d0-249cdcdf59de)
 
-<details>
-  <summary>Ejemplo de solución</summary>
-
-   ```kotlin
-   @Composable
-   fun CamposMultiples() {
-       var apellido by remember { mutableStateOf("") }
-       var edad by remember { mutableStateOf("") }
-       var result by remember { mutableStateOf("") }
-
-       Column(
-           modifier = Modifier.padding(16.dp),
-           horizontalAlignment = Alignment.CenterHorizontally
-       ) {
-           OutlinedTextField(
-               value = apellido,
-               onValueChange = { apellido = it },
-               label = { Text("Apellido") }
-           )
-           Spacer(modifier = Modifier.height(16.dp))
-           OutlinedTextField(
-               value = edad,
-               onValueChange = { edad = it },
-               label = { Text("Edad") },
-               keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
-           )
-           Spacer(modifier = Modifier.height(16.dp))
-           OutlinedButton(onClick = {
-               result = "$apellido tiene $edad años"
-           }) {
-               Text("Enviar")
-           }
-           Spacer(modifier = Modifier.height(16.dp))
-           Text(result)
-       }
-   }
-   ```
-
-   **Explicación**:
-   - `apellido` y `edad` se utilizan para almacenar el valor ingresado en cada campo de texto.
-   - Al hacer clic en el botón, se muestra el resultado basado en el nombre y la edad ingresados.
-</details>
