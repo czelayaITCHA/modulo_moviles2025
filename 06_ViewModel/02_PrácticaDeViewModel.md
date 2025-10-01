@@ -108,7 +108,7 @@ Este código es una función que gestiona la navegación entre pantallas usando 
 NavManager recibe una instancia de `ViewModel` como un parametro y la pasa a las dos pantallas.
 Por lo tanto, no se definen parámetros durante la navegación, pero **las dos pantallas pueden acceder a la misma lista a través del `ViewModel`**.
 
-## Crea una instancia de `ViewModel` y pásala a funcies componibles a través de `NavManager`
+## Crea una instancia de `ViewModel` y pásala a funciones componibles a través de `NavManager`
 
 ```diff
 class MainActivity : ComponentActivity() {
