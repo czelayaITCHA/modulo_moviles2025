@@ -16,21 +16,7 @@ Cree una aplicación móvil que cumpla los siguientes criterios.
 ## Imagen de IU
 ![image](https://github.com/user-attachments/assets/ee73ec3e-4967-42ae-b6a2-8123ae801376)
 
-<details>
-  <summary>Ejemplo de solución</summary>
-
-  https://github.com/itcha-organization/propina-app/blob/main/app/src/main/java/com/example/propinaapp/components/PropinaView.kt
-
-</details>
-
 ## Criterios extras
 
 1. Crear un ViewModel y mover los estados y métodos de manipulación de estados al ViewModel.
 
-
-<details>
-  <summary>Ejemplo de solución</summary>
-
-  https://github.com/itcha-organization/propina-app/tree/vercion-viewmodel/app/src/main/java/com/example/propinaapp
-
-</details>
