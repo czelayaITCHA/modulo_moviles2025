@@ -67,7 +67,7 @@ class GeminiViewModel: ViewModel() {
 
 }
 ```
-### 9.  Crear el archivo BodyComponentes dendro del package components, y crear la función composable MessageInput
+### 9.  Crear el archivo BodyComponents dendro del package components, y crear la función composable MessageInput
 
 antes definir colores personalizados en el archivo Color.kt
 ```kotlin
